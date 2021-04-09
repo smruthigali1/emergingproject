@@ -1,0 +1,169 @@
+* {
+  -moz-user-select: none;
+  user-select: none;
+}
+
+body {
+  background: black;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.uigame button {
+  background: rgba(255, 32, 32, 0.76);
+  border: none;
+  color: rgba(255, 255, 255, 0.774);
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  outline: none;
+  text-align: center;
+  width: 4rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.uigame button {
+  font-size: 0.8rem;
+  height: 25px;
+  margin: auto;
+  margin-left: 0;
+  padding: 0;
+  width: 5rem;
+}
+
+.app {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 45rem;
+}
+
+.map {
+  background: rgb(19, 161, 78);
+  position: absolute;
+  z-index: 1;
+}
+
+.player {
+  display: inline-block;
+  height: 0;
+  margin: 0;
+  width: 0;
+  z-index: 3;
+}
+
+.food {
+  border: 1px solid rgba(3, 3, 3, 0.7);
+  border-radius: 50%;
+  display: inherit;
+  height: 0;
+  margin: 0;
+  position: absolute;
+  width: 0;
+  z-index: 2;
+}
+
+.uiBar {
+  background: rgb(92, 92, 92);
+  display: flex;
+  justify-content: space-between;
+  margin: 5% auto;
+  margin-bottom: 0;
+  max-width: 100%;
+  padding: 1rem;
+}
+
+.uiNumbers {
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+.help {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-top: 57%;
+  width: 100%;
+}
+
+.secret:hover {
+  color: rgb(82, 82, 82);
+  transition: 0.2s;
+}
+
+.laser {
+  background: rgb(253, 255, 113);
+  border-radius: 50%;
+  padding: 4px;
+  position: absolute;
+}
+
+.stageCounter {
+  justify-self: left;
+  margin-left: 2rem;
+  text-align: left;
+  width: 150px;
+}
+
+.score {
+  margin-left: auto;
+  text-align: left;
+  width: 220px;
+}
+
+.highScore {
+  justify-self: flex-end;
+  margin-left: 0.5rem;
+  text-align: left;
+  width: 220px;
+}
+
+.timers p {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  position: relative;
+  text-align: center;
+}
+
+.backgroundTimer {
+  margin-top: 100px;
+  text-shadow: 1px 1px 0px rgba(68, 68, 68, 0.459);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.foregroundTimer {
+  color: white;
+  margin-top: -37px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.notMuted {
+  background: rgb(224, 122, 26);
+  letter-spacing: 0.5px;
+}
+
+.muted {
+  background: rgba(224, 122, 26, 0.63);
+  color: rgba(255, 255, 255, 0.315);
+  letter-spacing: 0;
+}
+
+.startButton {
+  letter-spacing: 4px;
+  min-width: 5.5rem;
+}
+
+.startButton:active {
+  background: rgba(224, 26, 26, 0.774);
+  transform: scale(0.9);
+  transition: 0.05s;
+}
